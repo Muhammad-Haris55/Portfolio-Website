@@ -4,6 +4,7 @@ import Navbar from "./Navbar"
 import Project from './Project';
 import Hero from "./Hero"
 import About from './About';
+// import Footer from './Footer';
 
 // import Footer from './Footer';
 
@@ -26,7 +27,7 @@ function App() {
         <Route path="/contact" element={<About/>} />
         <Route path="/contacts" element={<About/>} />
     </Routes>
-    {/* <Footer/> */}
+   
     </>
     )
 }

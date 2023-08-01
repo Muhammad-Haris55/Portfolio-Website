@@ -1,8 +1,8 @@
 import React from "react";
 import Typed from "typed.js";
 import { useEffect, useRef } from "react";
+import { NavLink } from "react-router-dom";
 
-{/* <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script> */ }
 function Hero() {
     const el = React.useRef(null);
     React.useEffect(() => {
@@ -27,12 +27,12 @@ function Hero() {
                         <div className="btns">
                         <div className="btn1">
                             <button>
-                                Download Resume
+                                <a href="HarrisResume.pdf" download="HarrisResume.pdf">Download Resume</a>
                             </button>
                         </div>
                         <div className="btn2">
                         <button>
-                                Visit Github
+                                <a href="https://github.com/Muhammad-Haris55" target="_blank">Visit Github</a>
                             </button>
                         </div>    
                         </div>
@@ -43,13 +43,29 @@ function Hero() {
                         <img src="./img.png" alt="" />
                     </div>
                 </div>
-
             </div>
-            {/* <div className="hrw">
-                <hr />
-            </div> */}
-             {/* <hr className="absolute"> <hr /> */}
-
+            <div id="foot" className="footer">
+        <div className="legal-text-contain">
+            <div className="small-print">
+                © 2021– 
+                <span className="copyright-year">2023</span>
+                <span className="copyright-business-name"> Muhammad Harris</span>
+            </div>
+            <div className="legal-links">
+                <div className="small-prints copyright">
+                    <a href="/policies/privacy-policy" class="legal-link">Privacy Policy</a>
+                </div>
+                <div class="small-prints copyright"> | </div>
+                <div className="small-prints copyright">
+                    <a href="/policies/privacy-policy" class="legal-link">Terms of Service </a>
+                </div>
+                <div class="small-prints copyright"> | </div>
+                <div className="small-prints copyright">
+                    <a href="/policies/privacy-policy" class="legal-link">Disclaimers</a>
+                </div>
+            </div>
+        </div>
+     </div>
         </>
     )
 }

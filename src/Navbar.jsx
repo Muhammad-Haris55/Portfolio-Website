@@ -1,28 +1,9 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-
-let btn=document.getElementById("nav-btn")
-// btn.addEventListener("click",(e)=>{
-//     if(e.target){
-//         // console.log("btnpress")
-//         btn.classList.toggle(".togleclass")
-//     }
-// })
-console.log(btn)
-// btn.classlist.toggle("togleclass")
-// console.log(btn)
-// btn.onclick(btn.classList.toggle".togleclass")
-
-// function btnpres(){
-//     btn.style.opacity="0"
-// }
-
-
-
-    function Navbar() {
+// document.querySelector("navbar-toggler")
+function Navbar() {
     return (
-        <>
-          
+        <>          
           <nav className="navbar navbar-expand-lg">
                 <div className="container col-md-10">
                     <NavLink
@@ -37,7 +18,6 @@ console.log(btn)
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
                     id="nav-btn"
                     aria-controls="navbarSupportedContent" 
-                    // onClick={}
                     aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
